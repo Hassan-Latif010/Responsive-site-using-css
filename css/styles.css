@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* Typography */
+
+h1{
+    color:#143774;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h3,h2,h1{
+    margin-top: 0;
+    color: #143774;
+}
+
+.article-title,.widget-title{
+    font-size: 1.2rem;
+}
+
+.article-title,h1,.widget-recent-post-title{
+    color:#143774;
+    font-family: 'Lora';
+    font-weight: 400;
+}
+
+strong{
+    font-weight: bold;
+}
+
+
+.subtitle{
+    font-weight: bold;
+    color: #1792d2;
+    font-size: 0.7rem;  
+}
+
+.widget-title{
+    color: #143774;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+.widget-recent-post-title{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.9rem;
+    color: #707070;
+    font-weight: lighter;
+}
+
+.widget-body{
+    color: #143774;
+    font-size: 0.9rem;
+}
+
+
+a{
+    color: #707070;
+}
+
+.article-body >a{
+    color: #1792d2;
+}
+
+.article-body >a:hover,
+.article-body >a:active{
+    color: #143774;
+}
+
+.article-read-more{
+    color: #1792d2;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.article-read-more:hover,
+.article-read-more:active{
+    color: #143774;
+    text-decoration: underline;
+}
+
+.article-info{
+    font-size: 0.75rem;
+    margin: 1em 0;
+}
+
+span{
+    color: #1792d2;
+}
+
+ul li{
+    
+    list-style: none;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+
+    margin: 0;
+}
+
+.article-title{
+    margin: 0;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.image-full{
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+
+/* Layout */
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #f8f8f8;
+    padding: 2em 0;
+    margin-bottom: 1.5em;
+}
+
+footer{
+    background-color: #143774;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+/* Navigation */
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li{
+    margin-left: 2em;
+    padding: 0.2em;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+nav a{
+    padding: 0.2em 0;
+}
+
+nav a:hover,nav a:active{
+    color: #1792d2;
+}
+.active:hover, .active:active{
+    color: #707070;
+}
+.active{
+    border-bottom: 1px solid #707070;
+
+}
+
+
+/* articles */
+hr{
+    margin: 1.4em 0;
+    border: none;
+    border-bottom: #707070 solid 1px;
+
+}
+
+.article-recent{
+    display: flex; 
+    flex-direction: column;
+}
+
+.article-recent-main{
+    order: 2;
+}
+
+.article-recent-secondary{
+    order: 1;
+}
+
+.article-recent-secondary{
+    margin: 1.2em 0;
+}
+.article-title,.article-body{
+    margin-bottom: 1em;
+}
+/* widget */
+.sidebar-widget{
+    border: 15px solid #f0f0f0;
+    margin-bottom: 2em;
+    padding: 1.5em;
+}
+
+.widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+
+}
+
+.widget-recent-post:last-child{
+    border: 0;
+    margin: 0;
+}
+
+.widget-image{
+    margin-bottom: 1em;
+    order: -1;
+}
+
+/* media query */
+
+@media (min-width:675px){
+    
+
+    .container-nav, .container-flex{
+        flex-direction: row;
+    } 
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 22%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    .article-recent{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-secondary{
+        margin: 0;
+        width: 20%;
+    }
+    .article-recent-main{
+        width: 75%;
+    }
+
+
+    .article-image{
+        width: 100%;
+        min-height: 150px;
+        object-fit: cover;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-feature-image{
+        order: -2;
+    }
+    .article-info{
+        order: -1;
+    }
+
+    
+
+}
+
+.about-p{
+    margin-bottom: 1em;
+}
+/* @media (min-width: 550px) {
+    .article-recent-main {
+        margin-top: -2.5em;
+    }
+    
+    .article-info {
+        text-align: right;
+    }
+} */
